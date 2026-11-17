@@ -13,6 +13,7 @@ PRICE_OUT = float(os.getenv("PRICE_OUT_PER_M", "2.50"))
 
 PROMPT = """You answer questions about LSEG annual reports.
 Use ONLY the context below. If the answer is not in the context, reply exactly: "I don't know based on the provided documents."
+When a question asks for a figure, give the exact value from the financial tables (for example £8,986 million), not a rounded figure from the narrative text.
 Be concise.
 
 Context:
@@ -22,7 +23,7 @@ Question: {question}
 Answer:"""
 
 
-def ask(question, k=8):
+def ask(question, k=15):
     start = time.time()
     chunks = retrieve(question, k)
     context = "\n\n".join(

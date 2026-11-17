@@ -1,7 +1,7 @@
 | Metric | Value |
 |---|---|
-| Accuracy | 100% (3/3) |
-| Median latency | 1.51 s |
-| p95 latency | 1.51 s |
-| Avg input tokens | 3038 |
-| Avg est. cost / request | $0.00094 |
+| Accuracy | 100% (20/20) |
+| Median latency | 1.48 s |
+| p95 latency | 2.22 s |
+| Avg input tokens | 7657 |
+| Avg est. cost / request | $0.00232 |

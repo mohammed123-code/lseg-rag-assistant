@@ -1,0 +1,222 @@
+[
+  {
+    "n": 1,
+    "type": "fact",
+    "ok": false,
+    "latency": 2.53,
+    "tin": 3435,
+    "tout": 42,
+    "cost": 0.001136,
+    "q": "What was LSEG's total income excluding recoveries in 2023?",
+    "ans": "Based on the provided documents, LSEG's total income excluding recoveries grew by +7.8% (reported) and +8.3% on a constant currency basis in 2023."
+  },
+  {
+    "n": 2,
+    "type": "fact",
+    "ok": false,
+    "latency": 1.58,
+    "tin": 3595,
+    "tout": 11,
+    "cost": 0.001106,
+    "q": "What was LSEG's total income excluding recoveries in 2024?",
+    "ans": "I don't know based on the provided documents."
+  },
+  {
+    "n": 3,
+    "type": "fact",
+    "ok": false,
+    "latency": 1.27,
+    "tin": 3864,
+    "tout": 11,
+    "cost": 0.001187,
+    "q": "What was LSEG's total income excluding recoveries in 2025?",
+    "ans": "I don't know based on the provided documents."
+  },
+  {
+    "n": 4,
+    "type": "fact",
+    "ok": false,
+    "latency": 0.66,
+    "tin": 3864,
+    "tout": 11,
+    "cost": 0.001187,
+    "q": "What was LSEG's total income including recoveries in 2025?",
+    "ans": "I don't know based on the provided documents."
+  },
+  {
+    "n": 5,
+    "type": "fact",
+    "ok": true,
+    "latency": 1.63,
+    "tin": 3223,
+    "tout": 4,
+    "cost": 0.000977,
+    "q": "What was the total dividend per share for 2023?",
+    "ans": "115 pence"
+  },
+  {
+    "n": 6,
+    "type": "fact",
+    "ok": true,
+    "latency": 1.63,
+    "tin": 3994,
+    "tout": 6,
+    "cost": 0.001213,
+    "q": "What was the total dividend per share for 2024?",
+    "ans": "130.0p"
+  },
+  {
+    "n": 7,
+    "type": "fact",
+    "ok": true,
+    "latency": 1.66,
+    "tin": 3889,
+    "tout": 8,
+    "cost": 0.001187,
+    "q": "What was the total dividend per share for 2025?",
+    "ans": "150.0 pence per share"
+  },
+  {
+    "n": 8,
+    "type": "fact",
+    "ok": true,
+    "latency": 1.28,
+    "tin": 4042,
+    "tout": 5,
+    "cost": 0.001225,
+    "q": "What was the adjusted EBITDA margin in 2024?",
+    "ans": "48.8%"
+  },
+  {
+    "n": 9,
+    "type": "fact",
+    "ok": true,
+    "latency": 0.72,
+    "tin": 4948,
+    "tout": 5,
+    "cost": 0.001497,
+    "q": "What was the adjusted EBITDA margin in 2025?",
+    "ans": "50.3%"
+  },
+  {
+    "n": 10,
+    "type": "fact",
+    "ok": true,
+    "latency": 0.78,
+    "tin": 3781,
+    "tout": 5,
+    "cost": 0.001147,
+    "q": "What was FTSE Russell ETF AUM at the end of 2024 in $bn?",
+    "ans": "1,433"
+  },
+  {
+    "n": 11,
+    "type": "fact",
+    "ok": false,
+    "latency": 0.74,
+    "tin": 3849,
+    "tout": 11,
+    "cost": 0.001182,
+    "q": "What was FTSE Russell ETF AUM at the end of 2025 in $bn?",
+    "ans": "I don't know based on the provided documents."
+  },
+  {
+    "n": 12,
+    "type": "fact",
+    "ok": false,
+    "latency": 0.95,
+    "tin": 4423,
+    "tout": 11,
+    "cost": 0.001354,
+    "q": "What was LSEG's statutory IFRS revenue in 2025?",
+    "ans": "I don't know based on the provided documents."
+  },
+  {
+    "n": 13,
+    "type": "fact",
+    "ok": true,
+    "latency": 0.83,
+    "tin": 3766,
+    "tout": 23,
+    "cost": 0.001187,
+    "q": "What was LSEG's leverage at the end of December 2025?",
+    "ans": "At the end of December 2025, LSEG's leverage was 1.8x."
+  },
+  {
+    "n": 14,
+    "type": "fact",
+    "ok": true,
+    "latency": 0.77,
+    "tin": 3735,
+    "tout": 6,
+    "cost": 0.001136,
+    "q": "What was the total number of employees at 31 December 2025?",
+    "ans": "28,516"
+  },
+  {
+    "n": 15,
+    "type": "multi-year",
+    "ok": true,
+    "latency": 0.96,
+    "tin": 3133,
+    "tout": 11,
+    "cost": 0.000967,
+    "q": "By what percentage did total income excluding recoveries grow reported from 2023 to 2024?",
+    "ans": "Growth on a reported basis was 6.1%."
+  },
+  {
+    "n": 16,
+    "type": "multi-year",
+    "ok": true,
+    "latency": 1.33,
+    "tin": 4111,
+    "tout": 4,
+    "cost": 0.001243,
+    "q": "By what percentage did total income excluding recoveries grow reported from 2024 to 2025?",
+    "ans": "5.8%"
+  },
+  {
+    "n": 17,
+    "type": "multi-year",
+    "ok": true,
+    "latency": 1.11,
+    "tin": 4031,
+    "tout": 63,
+    "cost": 0.001367,
+    "q": "By what percentage did dividends per share increase from 2024 to 2025?",
+    "ans": "Based on the provided context, the total dividend increased by 15.4% to 150.0 pence per share for 2025 (comprising a final dividend of 103.0 pence per share and an interim dividend of 47.0 pence per share)."
+  },
+  {
+    "n": 18,
+    "type": "refusal",
+    "ok": true,
+    "latency": 0.74,
+    "tin": 4263,
+    "tout": 11,
+    "cost": 0.001306,
+    "q": "What is the capital of France?",
+    "ans": "I don't know based on the provided documents."
+  },
+  {
+    "n": 19,
+    "type": "refusal",
+    "ok": true,
+    "latency": 0.76,
+    "tin": 3022,
+    "tout": 11,
+    "cost": 0.000934,
+    "q": "What was Microsoft's total revenue in 2024?",
+    "ans": "I don't know based on the provided documents."
+  },
+  {
+    "n": 20,
+    "type": "refusal",
+    "ok": true,
+    "latency": 0.9,
+    "tin": 3454,
+    "tout": 11,
+    "cost": 0.001064,
+    "q": "What is LSEG's share price target for 2030?",
+    "ans": "I don't know based on the provided documents."
+  }
+]

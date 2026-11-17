@@ -1,5 +1,170 @@
 [
-  {"q": "What was total income excluding recoveries in 2024?", "must_contain": ["8,49"], "type": "fact"},
-  {"q": "What was ETF AUM at the end of 2023?", "must_contain": ["1.25 trillion"], "type": "fact"},
-  {"q": "What is the capital of France?", "must_contain": ["don't know"], "type": "refusal"}
+  {
+    "q": "What was LSEG's total income excluding recoveries in 2023?",
+    "must_contain": [
+      "8,009"
+    ],
+    "type": "fact",
+    "source": "lseg_2023.pdf, Financial review"
+  },
+  {
+    "q": "What was LSEG's total income excluding recoveries in 2024?",
+    "must_contain": [
+      "8,494"
+    ],
+    "type": "fact",
+    "source": "lseg_2024.pdf, Financial review"
+  },
+  {
+    "q": "What was LSEG's total income excluding recoveries in 2025?",
+    "must_contain": [
+      "8,986"
+    ],
+    "type": "fact",
+    "source": "lseg_2025.pdf, Financial review"
+  },
+  {
+    "q": "What was LSEG's total income including recoveries in 2025?",
+    "must_contain": [
+      "9,346"
+    ],
+    "type": "fact",
+    "source": "lseg_2025.pdf, Financial review"
+  },
+  {
+    "q": "What was the total dividend per share for 2023?",
+    "must_contain": [
+      "115.0",
+      "115 pence",
+      "115p"
+    ],
+    "type": "fact",
+    "source": "lseg_2023.pdf, Financial review"
+  },
+  {
+    "q": "What was the total dividend per share for 2024?",
+    "must_contain": [
+      "130.0",
+      "130 pence",
+      "130p"
+    ],
+    "type": "fact",
+    "source": "lseg_2024.pdf, Financial review"
+  },
+  {
+    "q": "What was the total dividend per share for 2025?",
+    "must_contain": [
+      "150.0",
+      "150 pence",
+      "150p"
+    ],
+    "type": "fact",
+    "source": "lseg_2025.pdf, Financial review"
+  },
+  {
+    "q": "What was the adjusted EBITDA margin in 2024?",
+    "must_contain": [
+      "48.8"
+    ],
+    "type": "fact",
+    "source": "lseg_2024.pdf, Financial review"
+  },
+  {
+    "q": "What was the adjusted EBITDA margin in 2025?",
+    "must_contain": [
+      "50.3"
+    ],
+    "type": "fact",
+    "source": "lseg_2025.pdf, Financial review"
+  },
+  {
+    "q": "What was FTSE Russell ETF AUM at the end of 2024 in $bn?",
+    "must_contain": [
+      "1,433",
+      "1.43 trillion"
+    ],
+    "type": "fact",
+    "source": "lseg_2024.pdf, KPIs"
+  },
+  {
+    "q": "What was FTSE Russell ETF AUM at the end of 2025 in $bn?",
+    "must_contain": [
+      "1,827",
+      "1.83 trillion",
+      "1.8 trillion"
+    ],
+    "type": "fact",
+    "source": "lseg_2025.pdf, KPIs"
+  },
+  {
+    "q": "What was revenue in the consolidated income statement for 2025?",
+    "must_contain": [
+      "9,081"
+    ],
+    "type": "fact",
+    "source": "lseg_2025.pdf, p.120"
+  },
+  {
+    "q": "What was LSEG's leverage at the end of December 2025?",
+    "must_contain": [
+      "1.8x",
+      "1.8 x",
+      "1.8 times"
+    ],
+    "type": "fact",
+    "source": "lseg_2025.pdf, Financial review"
+  },
+  {
+    "q": "What was the total number of employees at 31 December 2025?",
+    "must_contain": [
+      "28,516"
+    ],
+    "type": "fact",
+    "source": "lseg_2025.pdf, Notes"
+  },
+  {
+    "q": "By what percentage did total income excluding recoveries grow reported from 2023 to 2024?",
+    "must_contain": [
+      "6.1%"
+    ],
+    "type": "multi-year",
+    "source": "lseg_2024.pdf, Financial review"
+  },
+  {
+    "q": "By what percentage did total income excluding recoveries grow reported from 2024 to 2025?",
+    "must_contain": [
+      "5.8%"
+    ],
+    "type": "multi-year",
+    "source": "lseg_2025.pdf, Financial review"
+  },
+  {
+    "q": "By what percentage did dividends per share increase from 2024 to 2025?",
+    "must_contain": [
+      "15.4%"
+    ],
+    "type": "multi-year",
+    "source": "lseg_2025.pdf, Financial review"
+  },
+  {
+    "q": "What is the capital of France?",
+    "must_contain": [
+      "don't know"
+    ],
+    "type": "refusal"
+  },
+  {
+    "q": "What was Microsoft's total revenue in 2024?",
+    "must_contain": [
+      "don't know"
+    ],
+    "type": "refusal"
+  },
+  {
+    "q": "What is LSEG's share price target for 2030?",
+    "must_contain": [
+      "don't know"
+    ],
+    "type": "refusal"
+  }
 ]
