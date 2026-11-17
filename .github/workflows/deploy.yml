@@ -1,0 +1,28 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy over SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            set -e
+            cd ~/lseg-rag-assistant
+            git pull origin main
+            docker build -t lseg-rag .
+            docker rm -f rag || true
+            docker run -d --name rag --restart unless-stopped -p 8000:8000 \
+              --env-file ~/app-data/.env \
+              -v ~/app-data/chroma_db:/code/chroma_db \
+              -v ~/app-data/logs:/code/logs \
+              lseg-rag
+            docker image prune -f
