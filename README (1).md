@@ -78,19 +78,21 @@ python eval/run_eval.py http://127.0.0.1:8000
 | 3. + top 15, question 12 reworded | 95% (19/20) | 1.69 s | 2.33 s | 7,620 | $0.00230 |
 | 4. + exact-figure prompt line | 100% (20/20) | 1.48 s | 2.22 s | 7,657 | $0.00232 |
 
-Versions 1 to 4 were measured locally. Cost is **estimated at paid-tier Gemini prices** (the free tier means the real bill is $0).
+Versions 1 to 4 were measured locally. Latency in all tables is the server-side time returned by the API. Cost is **estimated at paid-tier Gemini prices** (the free tier means the real bill is $0).
 
 ### Deployed on EC2
 
-Measured from my laptop against the EC2 instance, so latency includes network time.
+Same 20 questions, run from my laptop against the live EC2 instance. Latency is the server-side time reported by the API (retrieval plus the Gemini call), so it excludes the network trip from my laptop.
 
 | Metric | Value |
 |---|---|
-| Accuracy | `<fill in>` |
-| Median latency | `<fill in>` |
-| p95 latency | `<fill in>` |
-| Avg input tokens | `<fill in>` |
-| Avg est. cost / request | `<fill in>` |
+| Accuracy | 100% (20/20) |
+| Median latency | 1.04 s |
+| p95 latency | 8.83 s |
+| Avg input tokens | 7,657 |
+| Avg est. cost / request | $0.00232 |
+
+The median is fast, but the p95 is much higher than on my laptop (8.83 s versus 2.22 s). I did not investigate the cause. It is most likely a few slow Gemini responses or retries after a 503 on the free tier, and the 1 vCPU server can also slow down while loading. Treat it as a tail-latency risk.
 
 ### What failed and how I fixed it
 
