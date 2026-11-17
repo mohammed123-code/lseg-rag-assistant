@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pymupdf
+tiktoken
+chromadb
+sentence-transformers
+python-dotenv
+google-genai
