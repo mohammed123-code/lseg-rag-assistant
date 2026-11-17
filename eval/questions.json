@@ -1,0 +1,5 @@
+[
+  {"q": "What was total income excluding recoveries in 2024?", "must_contain": ["8,49"], "type": "fact"},
+  {"q": "What was ETF AUM at the end of 2023?", "must_contain": ["1.25 trillion"], "type": "fact"},
+  {"q": "What is the capital of France?", "must_contain": ["don't know"], "type": "refusal"}
+]

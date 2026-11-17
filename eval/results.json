@@ -1,0 +1,35 @@
+[
+  {
+    "n": 1,
+    "type": "fact",
+    "ok": true,
+    "latency": 2.58,
+    "tin": 2795,
+    "tout": 7,
+    "cost": 0.000856,
+    "q": "What was total income excluding recoveries in 2024?",
+    "ans": "\u00a38,494 million"
+  },
+  {
+    "n": 2,
+    "type": "fact",
+    "ok": true,
+    "latency": 1.51,
+    "tin": 2055,
+    "tout": 16,
+    "cost": 0.000656,
+    "q": "What was ETF AUM at the end of 2023?",
+    "ans": "$1.25 trillion (or $1,245 billion)"
+  },
+  {
+    "n": 3,
+    "type": "refusal",
+    "ok": true,
+    "latency": 0.72,
+    "tin": 4263,
+    "tout": 11,
+    "cost": 0.001306,
+    "q": "What is the capital of France?",
+    "ans": "I don't know based on the provided documents."
+  }
+]
