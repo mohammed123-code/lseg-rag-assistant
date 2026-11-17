@@ -1,7 +1,7 @@
 import json
 import time
 from pathlib import Path
-
+from fastapi.responses import FileResponse
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
@@ -11,7 +11,11 @@ app = FastAPI(title="LSEG RAG Assistant")
 
 LOG_FILE = Path("logs/requests.jsonl")
 LOG_FILE.parent.mkdir(exist_ok=True)
+STATIC_DIR = Path(__file__).parent / "static"
 
+@app.get("/", include_in_schema=False)
+def index():
+    return FileResponse(STATIC_DIR / "index.html")
 
 class Question(BaseModel):
     question: str = Field(..., min_length=3, max_length=500)
@@ -20,6 +24,7 @@ class Question(BaseModel):
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
 
 
 @app.post("/ask")
