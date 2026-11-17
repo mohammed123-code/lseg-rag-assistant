@@ -5,3 +5,6 @@ data/
 chroma_db/
 logs/
 __pycache__/
+docs/
+eval/
+README.md
